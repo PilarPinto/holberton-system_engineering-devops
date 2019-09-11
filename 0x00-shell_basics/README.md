@@ -1,0 +1,1 @@
+This [part of the project is about creation of scripts and its use in order to have a functions
