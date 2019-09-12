@@ -1,4 +1,5 @@
 #!/bin/bash
-usermod
+id betty
+
 
 
