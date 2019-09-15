@@ -1,4 +1,5 @@
 #!/bin/bash
-ls -la > cat ls_cwd_content
+ls -la > ls_cwd_content
+
 
 
