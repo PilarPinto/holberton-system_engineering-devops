@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -d 1 | uniq | cat
+cut -c 1 | tr -d '\n' | uniq | cat
