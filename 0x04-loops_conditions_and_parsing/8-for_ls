@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# use echo to print the msg
+list=$(ls)
+for ind in $list; do echo "$ind" |cut -d '-' -f2; done
