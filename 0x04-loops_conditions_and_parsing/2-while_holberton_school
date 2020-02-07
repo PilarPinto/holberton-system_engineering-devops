@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# use echo to print the msg
+c=0
+while [ $c -le 9 ]
+do
+    echo "Holberton School"
+    ((c++))
+done
