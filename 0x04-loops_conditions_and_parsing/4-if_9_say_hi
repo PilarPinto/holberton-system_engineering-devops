@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# use echo to print the msg
+c=0
+while [ $c -le 9 ]
+do
+    if [ $c -eq 9 ]
+    then
+	echo "Hi"
+    fi
+    echo "Holberton School"
+    ((c++))
+done
