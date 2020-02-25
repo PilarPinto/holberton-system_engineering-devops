@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Display the listening command option
+
+netstat -lp
