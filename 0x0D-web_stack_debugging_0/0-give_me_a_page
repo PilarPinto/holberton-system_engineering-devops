@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This works for an apache image
+service apache2 start
