@@ -2,7 +2,7 @@
 #This is the configure of the HAProxy
 apt-get -y update
 apt-get -y install haproxy
-varf="/
+varf="\
 frontend http_front
     bind *:80
     mode http
