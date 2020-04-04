@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#This is the configure of the HAProxy
+apt-get -y update
+apt-get -y install haproxy
+IP1=54.237.196.98
+IP2=104.196.27.193
+S1=1101-web-01
+S2=1101-web-02
+varf="/
+fronted http_front
+    bind *:80
+    mode http
+    default_backend http_back
+
+backend http_back
+    balance roundrobin
+    server $S1 $IP1:80 check
+    server $S2 $IP2:80 check"
+
+echo "$varf" >> /etc/haproxy/haproxy.cfg
+service haproxy start
