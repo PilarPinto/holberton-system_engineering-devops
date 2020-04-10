@@ -1,4 +1,3 @@
 sudo ufw allow ssh
 sudo ufw allow 'NGNIX HTTP'
 sudo ufw allow 'NGNIX HTTPS'
-sudo ufw enable
