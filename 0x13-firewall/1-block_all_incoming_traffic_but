@@ -1,6 +1,4 @@
-sudo apt-get install ufw
 sudo ufw allow ssh
-sudo ufw allow 'OpenSSH'
 sudo ufw allow 'NGNIX HTTP'
 sudo ufw allow 'NGNIX HTTPS'
 sudo ufw enable
