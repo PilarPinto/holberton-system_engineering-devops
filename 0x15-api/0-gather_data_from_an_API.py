@@ -27,4 +27,4 @@ if __name__ == "__main__":
         employee_name, number_done_task, total_number_tasks))
 
     for phrase in tasks:
-        print('\t', phrase)
+        print('\t ', phrase)
