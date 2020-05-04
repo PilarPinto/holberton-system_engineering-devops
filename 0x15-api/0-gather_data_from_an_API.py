@@ -23,8 +23,8 @@ if __name__ == "__main__":
             tasks.append(ind.get('title'))
             number_done_task += 1
 
-    print('Employee {} is done with tasks({}/{})'.format(
+    print('Employee {} is done with tasks({}/{}):'.format(
         employee_name, number_done_task, total_number_tasks))
 
     for phrase in tasks:
-        print('\t ', phrase)
+        print('\t {}'.format(phrase))
