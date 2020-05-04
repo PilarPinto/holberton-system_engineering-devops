@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''
+Gatherin data form REST API dummy JSON file
+'''
 import requests
 import sys
 
