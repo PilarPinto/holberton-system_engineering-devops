@@ -8,7 +8,7 @@ import requests
 
 def top_ten(subreddit):
 
-    sub_url = 'https://www.reddit.com/r/{}/top.json'.format(subreddit)
+    sub_url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     reddit_sub = requests.get(sub_url, allow_redirects=False,
                               headers={'User-Agent': 'My User Agent 1.0'})
     if reddit_sub:
