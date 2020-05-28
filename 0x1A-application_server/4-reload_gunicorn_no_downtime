@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Cleanest way to gracefully reload
+sudo pkill -HUP gunicorn
