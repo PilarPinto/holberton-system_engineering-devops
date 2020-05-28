@@ -32,8 +32,9 @@ server {
                 autoindex off;
         }
 
-        location /airbnb-onepage/ {
-                proxy_pass http://0.0.0.0:5000;
+	location /airbnb-onepage/ {
+		include proxy_params;
+		proxy_pass http://0.0.0.0:5000;
         }
 
         # See: https://bugs.debian.org/765782
