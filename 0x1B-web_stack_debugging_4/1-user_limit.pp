@@ -1,5 +1,6 @@
 #Fixing the failed  request
 exec { 'Lenght range nofile fix':
-    command  => 'sudo sed -i "s/hard nofile 5/hard nofile 40000/g" /etc/security/limits.conf; sudo sed -i "s/soft nofile 4/soft nofile 20000/g" /etc/security/limits.conf; sudo sysctl -p',
-    provider => 'shell'
+    environment => ['ROUTE=/etc/security/limits.conf', 'HAR=hard nofile','SOF=soft nofile'],
+    command     => 'sudo sed -i "s/$HAR 5/$HAR 40000/g" $ROUTE; sudo sed -i "s/$SOF 4/$SOF 20000/g" $ROUTE',
+    provider    => 'shell'
 }
